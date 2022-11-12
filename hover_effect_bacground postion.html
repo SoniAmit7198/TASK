@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            height: 100px;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .header ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 30px;
+            /* background-color: gray; */
+        }
+
+        .header ul li .z {
+            text-decoration: none;
+            font-size: 25px;
+            color: #fff;
+            transition: 0.3s;
+            /* background: gray; */
+            /* margin-top: 70px; */
+        }
+
+        .z::after {
+            content: "";
+            display: block;
+            height: 5px;
+            width: 0;
+            background-color: aqua;
+            margin-top: 20px;
+            transition: 1s;
+        }
+
+        .z:hover::after {
+            width: 100%;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- header start  -->
+
+    <div class="header">
+        
+            <ul>
+                <li><a class="z" href="">Home</a></li>
+                <li><a class="z" href="">About</a></li>
+                <li><a class="z" href="">Men's wear</a></li>
+                <li><a class="z" href="">Women's wear</a></li>
+                <li><a class="z" href="">Short Code </a></li>
+                <li><a class="z" href="">Contact</a></li>
+            </ul>
+        
+    </div>
+
+    <!-- header close -->
+</body>
+
+</html>
