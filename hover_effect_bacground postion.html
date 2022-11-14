@@ -52,27 +52,108 @@
             width: 100%;
             transition: 1s;
         }
+
+        .main {
+            display: flex;
+            height: 400px;
+            /* background-color: blue; */
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .img_1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 500px;
+            /* background-color: aqua; */
+            margin-right: 70px;
+            border: 15px solid rgba(255, 255, 255, 0.3);
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+            background-origin: border-box;
+            background-position: -40px 0;
+            transition: 0.7s;
+
+        }
+
+        .img_2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 500px;
+            /* background-color: yellow; */
+            border: 15px solid rgba(255, 255, 255, 0.3);
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+            background-origin: border-box;
+            background-position: -40px 0;
+            transition: 0.7s;
+
+        }
+
+        .img_1:hover , .img_2:hover {
+            background-position: 0px 0px;
+
+        }
+        .border{
+            height: 200px;
+            width: 380px;
+            border: 5px solid white;
+            background: transparent;
+            opacity: 0;
+            transition: 0.7s;
+
+        }
+        .img_1:hover .border , .img_2:hover .border {
+            opacity: 1;
+            transform: translateX(10px);
+
+        }
     </style>
+
 </head>
 
 <body>
 
-<!-- header start  -->
+    <!-- header start  -->
 
     <div class="header">
-        
-            <ul>
-                <li><a class="z" href="">Home</a></li>
-                <li><a class="z" href="">About</a></li>
-                <li><a class="z" href="">Men's wear</a></li>
-                <li><a class="z" href="">Women's wear</a></li>
-                <li><a class="z" href="">Short Code </a></li>
-                <li><a class="z" href="">Contact</a></li>
-            </ul>
-        
+
+        <ul>
+            <li><a class="z" href="">Home</a></li>
+            <li><a class="z" href="">About</a></li>
+            <li><a class="z" href="">Men's wear</a></li>
+            <li><a class="z" href="">Women's wear</a></li>
+            <li><a class="z" href="">Short Code </a></li>
+            <li><a class="z" href="">Contact</a></li>
+        </ul>
+
     </div>
 
     <!-- header close -->
+
+    <!-- image start -->
+
+    <div class="main">
+        <div class="img_1">
+            <div class="border">
+
+            </div>
+
+        </div>
+        <div class="img_2">
+            <div class="border">
+                 
+            </div>
+
+        </div>
+    </div>
+
+
 </body>
 
 </html>
