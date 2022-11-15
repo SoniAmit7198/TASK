@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         * {
             box-sizing: border-box;
@@ -113,6 +115,66 @@
             transform: translateX(10px);
 
         }
+        .icon {
+            height: 100px;
+            /* background-color: aqua; */
+            display: flex;
+            margin: 30px 30px;
+
+        }
+
+        .logo {
+            height: 80px;
+            width: 80px;
+            background-color: black;
+            color: #fff;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            position: relative;
+            /* z-index: 1; */
+        }
+        .logo::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color:aqua;
+            transform: scale(0);
+            transition: 1s;
+            /* z-index: -1; */
+        }
+
+
+        .logo:hover::after {
+            transform: scale(1);
+            
+            
+
+        }
+
+        .font {
+            height: 80px;
+            width: auto;
+            /* background-color: brown; */
+            margin-left: 20px;
+        }
+        .font a {
+            font-size: 20px;
+            color: #2fdab8;
+            text-decoration: none;
+        }
+
+        .font p {
+            padding-top: 10px;
+        }
+
+
+
     </style>
 
 </head>
@@ -152,6 +214,41 @@
 
         </div>
     </div>
+    <!-- image end -->
+
+    <!-- content start -->
+    <div class="icon">
+        <div class="logo">
+            <i class="fa fa-truck"></i>
+        </div>
+        <div class="font"><a href="">FREE SHIPPING</a>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+
+        <div class="logo">
+            <i class="fa fa-headphones"></i>
+        </div>
+        <div class="font">
+            <a> 24/7 SUPPORT</a>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="logo">
+            <i class="fa fa-shopping-bag"></i>
+        </div>
+        <div class="font">
+            <a> MONEY BACK GUARANTEE</a>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <div class="logo">
+            <i class="fa fa-gift"></i>
+        </div>
+        <div class="font">
+            <a> FREE GIFT COUPONS </a>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+    </div>
+    <!-- content end -->
+
 
 
 </body>
