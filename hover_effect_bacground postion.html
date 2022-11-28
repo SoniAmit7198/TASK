@@ -97,11 +97,13 @@
 
         }
 
-        .img_1:hover , .img_2:hover {
+        .img_1:hover,
+        .img_2:hover {
             background-position: 0px 0px;
 
         }
-        .border{
+
+        .border {
             height: 200px;
             width: 380px;
             border: 5px solid white;
@@ -110,11 +112,14 @@
             transition: 0.7s;
 
         }
-        .img_1:hover .border , .img_2:hover .border {
+
+        .img_1:hover .border,
+        .img_2:hover .border {
             opacity: 1;
             transform: translateX(10px);
 
         }
+
         .icon {
             height: 100px;
             /* background-color: aqua; */
@@ -136,6 +141,7 @@
             position: relative;
             z-index: 1;
         }
+
         .logo::after {
             content: "";
             position: absolute;
@@ -143,7 +149,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background-color:aqua;
+            background-color: aqua;
             transform: scale(0);
             transition: 1s;
             z-index: -1;
@@ -152,8 +158,8 @@
 
         .logo:hover::after {
             transform: scale(1);
-            
-            
+
+
 
         }
 
@@ -163,6 +169,7 @@
             /* background-color: brown; */
             margin-left: 20px;
         }
+
         .font a {
             font-size: 20px;
             color: #2fdab8;
@@ -172,36 +179,123 @@
         .font p {
             padding-top: 10px;
         }
-.x{
-    height: 40px;
-    width: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: aqua;
-    margin: auto;
-    outline: 5px solid aqua;
-    transition: 0.7s;
-    font-weight: bold;
-    
-   
-}
-.x a{
-    text-decoration: none;
-    color: white;
-     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-     letter-spacing: 3px;
-    
-}
-.x:hover
-{
-    outline-offset: 7px;
-}
+
+        .x {
+            height: 40px;
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: aqua;
+            margin: auto;
+            outline: 5px solid aqua;
+            transition: 0.7s;
+            font-weight: bold;
 
 
+        }
 
+        .x a {
+            text-decoration: none;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            letter-spacing: 3px;
 
+        }
 
+        .x:hover {
+            outline-offset: 8px;
+        }
+
+        .product-card {
+            height: 370px;
+            width: 250px;
+            /* background: gray; */
+            position: relative;
+            margin: 50px;
+
+        }
+
+        .product-card .prd-img {
+            height: 240px;
+            width: 250px;
+            /* background-color: aqua; */
+
+        }
+
+        .product-card .prd-img .front,
+        .back {
+            height: 240px;
+            width: 250px;
+            /* background-color: aqua; */
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            transition: 1s;
+
+        }
+
+        .product-card .prd-img .front {
+            transform: rotateY(0deg);
+        }
+
+        .product-card .prd-img .back {
+            transform: rotateY(180deg);
+        }
+
+        .product-card:hover .back {
+            transform: rotateY(0deg);
+        }
+
+        .product-card:hover .front {
+            transform: rotateY(180deg);
+        }
+
+        .product-card .view {
+            height: 30px;
+            width: 250px;
+            background: lightcoral;
+            text-align: center;
+            line-height: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .product-card:hover .view {
+            opacity: 1;
+            top: 210px;
+        }
+
+        .product-card .info {
+            height: 130px;
+            width: 250px;
+            background-color: rgb(94, 255, 0);
+        }
+
+        .product-card .new {
+            height: 25px;
+            width: 45px;
+            background-color: red;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+            line-height: 25px;
+            z-index: 1;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
     </style>
 
 </head>
@@ -236,12 +330,123 @@
         </div>
         <div class="img_2">
             <div class="border">
-                 
+
             </div>
 
         </div>
     </div>
     <!-- image end -->
+
+    <!-- product card start -->
+
+    <div class="container">
+
+        <div class="product-card">
+            <span class="new">New</span>
+
+            <div class="prd-img">
+
+                <div class="front">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                        height="100%" width="100%">
+                </div>
+                <div class="back">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                        height="100%" width="100%">
+                </div>
+
+            </div>
+
+            <div class="view">Quick View</div>
+
+            <div class="info">
+                <p>Formal blue Shirt</p>
+                <p> $45.99 <span style="text-decoration: line-through;"> $69.71</span></p>
+                <button>ADD TO CART</button>
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <span class="new">New</span>
+
+            <div class="prd-img">
+
+                <div class="front">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg"
+                        height="100%" width="100%">
+                </div>
+                <div class="back">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg"
+                        height="100%" width="100%">
+                </div>
+
+            </div>
+
+            <div class="view">Quick View</div>
+
+            <div class="info">
+                <p>Formal blue Shirt</p>
+                <p> $45.99 <span style="text-decoration: line-through;"> $69.71</span></p>
+                <button>ADD TO CART</button>
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <span class="new">New</span>
+
+            <div class="prd-img">
+
+                <div class="front">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg"
+                        height="100%" width="100%">
+                </div>
+                <div class="back">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg"
+                        height="100%" width="100%">
+                </div>
+
+            </div>
+
+            <div class="view">Quick View</div>
+
+            <div class="info">
+                <p>Formal blue Shirt</p>
+                <p> $45.99 <span style="text-decoration: line-through;"> $69.71</span></p>
+                <button>ADD TO CART</button>
+            </div>
+
+        </div>
+
+        <div class="product-card">
+            <span class="new">New</span>
+
+            <div class="prd-img">
+
+                <div class="front">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg"
+                        height="100%" width="100%">
+                </div>
+                <div class="back">
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg"
+                        height="100%" width="100%">
+                </div>
+
+            </div>
+
+            <div class="view">Quick View</div>
+
+            <div class="info">
+                <p>Formal blue Shirt</p>
+                <p> $45.99 <span style="text-decoration: line-through;"> $69.71</span></p>
+                <button>ADD TO CART</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- product card end  -->
 
     <!-- content start -->
     <div class="icon">
@@ -275,15 +480,15 @@
         </div>
     </div>
     <!-- content end -->
-     
-    
+
+
     <!-- shop now start -->
 
-     <div class="x">
-       <a href=""> Shop Now</a>
-     </div>
+    <div class="x">
+        <a href=""> Shop Now</a>
+    </div>
 
-     <!-- shop now start -->
+    <!-- shop now start -->
 
 
 
