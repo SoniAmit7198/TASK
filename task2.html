@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .a {
+            background-color: rgb(238, 203, 227);
+            height: 700px;
+            border-radius: 0 0 50% 50%;
+            filter: blur(5px);
+            box-shadow: 10px 10px 50px rgb(238, 203, 227);
+
+
+        }
+
+        .b {
+            background-color: rgb(245, 245, 182);
+            height: 320px;
+            width: 50%;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            top: 400px;
+            left: 0;
+            filter: blur(5px);
+            box-shadow: 10px 10px 50px rgb(245, 245, 182);
+
+        }
+
+        .c {
+            background-color: rgb(110, 252, 252);
+            height: 320px;
+            width: 50%;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            top: 400px;
+            right: 0;
+            filter: blur(5px);
+            box-shadow: 0px 0px 50px rgb(110, 252, 252);
+        }
+
+        .form {
+            height: 350px;
+            width: 350px;
+            background-color: rgb(164, 164, 156);
+            border: 2px solid;
+            position: absolute;
+            top: 26%;
+            left: 38%;
+            border-radius: 20px;
+           
+        }
+        .form1 {
+            
+        }
+        .l1{
+            margin-top: 30px;
+            margin-left: 38px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: cursive;
+            color: white;
+        }
+        .l2, .l3{
+            margin: 23px 0 20px 38px ;
+           
+        }
+        .text{
+            height: 35px;
+            width: 80%;
+            border-radius: 18px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="form">
+            <div class="form1">
+                <div class="l1"> <span style="border-bottom:2px solid white ;"> Login F</span>orm</div>
+                <form action="" class="l2">
+                    <input type="text" value="" placeholder="Username" required class="text">
+                 </form>
+                 <form action="" class="l3">
+                    <input type="password" value="" placeholder="password" required class="text" >
+                 </form>
+                <button>Login</button>
+                <div>Forgot password?<u>Click Here</u></div>
+                <div>Don't have an account? <u>Sign up</u></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
